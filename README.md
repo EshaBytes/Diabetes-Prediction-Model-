@@ -66,3 +66,61 @@ The backend is built with **PyTorch** and **scikit-learn**, served via a **Flask
 ├── script.js           # Frontend JavaScript
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
+```
+## 🛠️ Installation and Running Locally
+
+
+# 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/diabetes-prediction-model.git
+cd diabetes-prediction-model
+```
+
+# 2. Create Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate    # For Linux/macOS
+# OR
+venv\Scripts\activate       # For Windows
+```
+
+# 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+# 4. Run the Project
+```bash
+# Train the model
+python train_model.py
+```
+
+# Start the Flask server
+```bash
+python server.py
+```
+
+# Open the frontend:
+# Open 'frontend/index.html' and click "Go Live" in VS Code
+# OR open the HTML file manually in your browser
+
+
+
+## 📦 Requirements
+
+* Python 3.8+
+* Libraries:
+  * Flask
+  * scikit-learn
+  * PyTorch
+  * Pandas
+  * NumPy
+  * Pickle
+
+## 📸 Screenshots
+
+![Screenshot (271)](https://github.com/user-attachments/assets/d46915de-11f9-4cba-b627-ab01f9b5ad0f)
+![Screenshot (272)](https://github.com/user-attachments/assets/9da9d639-eb31-4ae5-8d3e-9085a007276b)
+![Screenshot (273)](https://github.com/user-attachments/assets/dbb4cb82-5ee8-410f-9c02-5a38912bba61)
+![Screenshot (274)](https://github.com/user-attachments/assets/9ad75fb4-be60-475d-9419-ee1e3bc7cf60)
+![Screenshot (275)](https://github.com/user-attachments/assets/0f8e410d-6f43-4aa3-8cc4-fc59dab89f13)
