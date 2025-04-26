@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Progression Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Box -->
+    <div class="header-box">
+        <h1>Diabetes Progression Prediction</h1>
+    </div>
+
+    <!-- Form Container -->
+    <div class="container">
+        <h1>Enter Patient Details</h1>
+        <form id="predictionForm">
+            <label>Age:</label>
+            <input type="number" id="age" step="0.00000001" placeholder="Enter normalized age">
+
+            <label>Sex:</label>
+            <input type="number" id="sex" step="0.00000001" placeholder="Enter normalized sex">
+
+            <label>BMI:</label>
+            <input type="number" id="bmi" step="0.00000001" placeholder="Enter normalized BMI">
+
+            <label>Avg Blood Pressure:</label>
+            <input type="number" id="bp" step="0.00000001" placeholder="Enter normalized blood pressure">
+
+            <label>Cholesterol Level:</label>
+            <input type="number" id="chol" step="0.00000001" placeholder="Enter normalized cholesterol level">
+
+            <label>Bad Cholesterol:</label>
+            <input type="number" id="bad_chol" step="0.00000001" placeholder="Enter normalized bad cholesterol">
+
+            <label>Good Cholesterol:</label>
+            <input type="number" id="good_chol" step="0.00000001" placeholder="Enter normalized good cholesterol">
+
+            <label>Total Cholesterol/HDL Ratio:</label>
+            <input type="number" id="chol_hdl_ratio" step="0.00000001" placeholder="Enter normalized Cholesterol/HDL ratio">
+
+            <label>Triglycerides:</label>
+            <input type="number" id="triglycerides" step="0.00000001" placeholder="Enter normalized triglycerides">
+
+            <label>Glycated Hemoglobin:</label>
+            <input type="number" id="hba1c" step="0.00000001" placeholder="Enter normalized HbA1c">
+
+            <button type="submit">Predict</button>
+        </form>
+        <h1 id="result"></h1>
+    </div>
+
+    <!-- Footer Box -->
+    <div class="footer-box">
+        <p>&copy; 2025 Diabetes Prediction. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBV0fE-oRCUg5Ndx0Ymggcq77I7TP_tXf8",
+          authDomain: "diabetesprediction-d17db.firebaseapp.com",
+          projectId: "diabetesprediction-d17db",
+          storageBucket: "diabetesprediction-d17db.firebasestorage.app",
+          messagingSenderId: "508727106658",
+          appId: "1:508727106658:web:13f58e82d86fe51254c53b",
+          measurementId: "G-VP8YJ9J91G"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
