@@ -95,14 +95,13 @@ pip install -r requirements.txt
 python train_model.py
 ```
 
-# Start the Flask server
+# 5. Start the Flask server
 ```bash
 python server.py
 ```
-
-# Open the frontend:
-# Open 'frontend/index.html' and click "Go Live" in VS Code
-# OR open the HTML file manually in your browser
+Open the frontend:
+Open 'frontend/index.html' and click "Go Live" in VS Code
+OR open the HTML file manually in your browser
 
 
 
